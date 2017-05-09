@@ -36,8 +36,9 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        $aProductos2=new ConsultaProductos();
-            foreach($aProductos as $oPro){
+        $aProducto2=new ConsultaProductos();
+        
+            foreach($aProductos->Lista() as $oPro){
             echo $oPro->codigo. " " .$oPro->nombre."/".$oPro->precio."/usd ".$oPro->totalUSD();
             echo "<br>";
             }    

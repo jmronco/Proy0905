@@ -20,6 +20,7 @@ class ConsultaProductos{
             $oProducto = new Producto($fila["nombre"], $fila["precio"], $fila["codigo"]);
             $aProductos[$i]=$oProducto;
         }
+        /*Se devuelve "retorna el arreglo de productos"*/
         return $aProductos;
         
     }
